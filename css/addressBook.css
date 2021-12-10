@@ -1,0 +1,25 @@
+.address {
+    font: normal normal bold 20px/25px Montserrat;
+    font-family: "Montserrat", sans-serif;
+    letter-spacing: 0px;
+    color: skyblue;
+    text-transform: capitalize;
+    padding-left: 10px;
+  }
+  .book {
+    color: black;
+  }
+  .logo-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: 0px solid green;
+    width: 80%;
+  }
+  .header-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border: 0px solid green;
+  }
