@@ -3,19 +3,22 @@
     <head>
         <title>ADDRESS BOOK</title>
         <link href="../css/addressBook.css" rel="StyleSheet">
+        <link href="../assets/images/logo.png" rel="shortcut icon">
     </head>
+
     <body>
         <header class="header-content header"> 
             <div class ="logo-content">
-                <img alt="shortcut icon" src="../assets/logo.png">
+                <img alt="shortcut icon" src="../assets/images/logo.png">
                 <div>
-                    <span class ="address">ADDRESS</span><br>
-                    <span class="address book">BOOK</span>
+                    <span class ="emp-text">ADDRESS</span><br>
+                    <span class="emp-text emp-payroll">BOOK</span>
                </div>
            </div>
-
+        </header>
+        <div style="width:700px;margin-left:300px;height:500px;display:block !important; background-color:white;">
            <div class="form-head">PERSON ADDRESS FORM</div>
-           
+
            <div class="row-content">
                <label for="name" class="label text">Full Name</label>
                <input type="type" name="name" id="name" class="input required" placeholder="Your Name ..."><br /> 
@@ -26,6 +29,36 @@
                <input type="type" name="phonenumber" id="phonenumber" class="input required" placeholder="Your Number ..."><br />
            </div>
 
-
+        <div class="row-content">
+        <label class="label text" for="address" >Address</label>
+        <textarea id="notes" class="input" name="address" placeholder="" style="height:100px"></textarea>
+    </div>
+    <div style="display: flex;">
+        <div class="row-content" >  <label class="label text" for="city">City</label> 
+            <select class="input" id="city" name="City">
+                <option value="0">Select City</option>
+                <option value="1">Salem</option>
+                <option value="2">Rasipuram</option>
+                <option value="3">Namakkal</option>
+            </select>
+        </div>
+       <div class="row-content" > <label class="label text" for="state">State</label> 
+         <select class="input" id="state" name="State">
+            <option value="0">Select State</option>
+            <option value="1">TamilNadu</option>
+            <option value="2">Kerala</option>
+            <option value="3">Karnataka</option>
+         </select>
+       </div>
+        <div class="row-content" > <label class="label text" for="zip code">Zip Code</label>
+            <input class="input" id="zip code" type="number" name="Zip Code"></input>
+        </div>
+    </div> 
+    <div style= "margin-top: 20px; margin-left: 200px;">
+        <button type="add" class="button addButton" id="submitButton">Add</button>
+        <button type="reset" class="resetButton button">Reset</button>
+    </div> 
+    </div>
+    </div>
     </body>
     </html>

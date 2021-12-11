@@ -1,14 +1,26 @@
-.address {
-    font: normal normal bold 20px/25px Montserrat;
-    font-family: "Montserrat", sans-serif;
-    letter-spacing: 0px;
-    color: skyblue;
-    text-transform: capitalize;
-    padding-left: 10px;
+* {
+    box-sizing: border-box;
   }
-  .book {
-    color: black;
+  
+  body {
+    margin-left: 0;
+    height: 100%;
+    background-color: #f7f7f7;
   }
+  
+  .header {
+    padding: 15px 0;
+    background-color: #ffffff;
+  }
+  
+  .header-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border: 0px solid green;
+  }
+  
   .logo-content {
     display: flex;
     flex-direction: row;
@@ -16,12 +28,22 @@
     border: 0px solid green;
     width: 80%;
   }
-  .header-content {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    border: 0px solid green;
+  
+  .logo-content-img {
+    border: solid 0px #42515f;
+  }
+  
+  .emp-text {
+    font: normal normal bold 20px/25px Montserrat;
+    font-family: "Montserrat", sans-serif;
+    letter-spacing: 0px;
+    color: rgb(5, 168, 233);
+    text-transform: capitalize;
+    padding-left: 10px;
+  }
+  
+  .emp-payroll {
+    color: #42515f;
   }
   
   .form-content {
@@ -45,22 +67,21 @@
   }
   
   .form-head {
-    font: normal normal bold 24px/37px Roboto;
-    letter-spacing: 0px;
-    color: #42515f;
-    text-transform: capitalize;
-    opacity: 1;
-    padding-bottom: 20px;
-    margin-left: 50px;
-  }
+    text-align:center; 
+    color:white;
+    margin-top: 20px;
+    padding-top: 15px;
+     background-color: blue;
+     height: 50px;
+}
+  
   
   .row-content {
-    display: flex;
     flex-direction: row;
-    margin-bottom: 10px;
+    margin-bottom: 0px;
     align-items: center;
     border: 0px solid green;
-    margin-top: 30px;
+    margin-top: 0px;
     margin-left: 50px;
     margin-right: 50px;
   }
@@ -73,4 +94,53 @@
     padding: 12px 12px 12px 0;
     display: inline-block;
   }
+  
+  .text {
+    font-size: 16px;
+    color: #42515f;
+    opacity: 1;
+    font-family: Roboto;
+  }
+  
+  .input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+    
+  }
+  
+  .custom {
+    display: block;
+    position: absolute;
+    width: 977px;
+    height: 550px;
+}
+.button {
+  font-size: 15px;
+  font-family: Roboto;
+  letter-spacing: 0px;
+  color: #42515f;
+  opacity: 1;
+  background: #E2E2E2 0% 0% no-repeat padding-box;
+  border: 2px solid #969696;
+  border-radius: 5px;
+  font-weight: 400;
+  min-width: 140px;
+  padding: 7px 7px;
+  border: 1px solid #707070;
+  cursor: pointer;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-top : 10px;
+}
 
+.addButton {
+  margin-right: 30px;
+  padding: 5px 5px;
+}
+.resetButton {
+  padding: 5px 5px;
+}
+  
