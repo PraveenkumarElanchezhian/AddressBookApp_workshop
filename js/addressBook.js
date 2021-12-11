@@ -1,4 +1,7 @@
 class AddressBookData{
+
+    id;
+
     get firstname(){
         return this._firstname;
     }
@@ -54,7 +57,7 @@ class AddressBookData{
     }
 
     tostring(){
-        return 
+        return "Id = " + this.id + " fullName = " + this.firstname + " phonenumber = " +this.phonenumber + " address = "+ this.address + " city = "+this.city+ " state = "+this.state+" ZipCode = "+this.zipcode;
     }
     
 }
