@@ -11,27 +11,33 @@
             <div class ="logo-content">
                 <img alt="shortcut icon" src="../assets/images/logo.png">
                 <div>
-                    <span class ="emp-text">ADDRESS</span><br>
-                    <span class="emp-text emp-payroll">BOOK</span>
+                    <span class ="address-text">ADDRESS</span><br>
+                    <span class="address-text book-text">BOOK</span>
                </div>
            </div>
         </header>
-        <div style="width:700px;margin-left:300px;height:500px;display:block !important; background-color:white;">
+        <div class="form-content">
+            <form class="form" action="#" onreset="event.preventDefault();">
+
+        <!-- <div style="width:700px;margin-left:300px;height:500px;display:block !important; background-color:white;"> -->
            <div class="form-head">PERSON ADDRESS FORM</div>
 
            <div class="row-content">
                <label for="name" class="label text">Full Name</label>
-               <input type="type" name="name" id="name" class="input required" placeholder="Your Name ..."><br /> 
-           </div>
+               <input type="type" name="name" id="name" class="input required" placeholder="Your Name ..."  autocomplete="off" required><br /> 
+               <error-output class="text-error" for="text"></error-output>
+            </div>
 
            <div class="row-content">
                <label for="phonenumber" class="label text">Phone Number</label>
-               <input type="type" name="phonenumber" id="phonenumber" class="input required" placeholder="Your Number ..."><br />
-           </div>
+               <input type="type" name="phonenumber" id="phonenumber" class="input required" placeholder="Your Number ..."autocomplete="off" required><br />
+               <error-output class="phonenumber-error" for="text"></error-output>
+            </div>
 
         <div class="row-content">
         <label class="label text" for="address" >Address</label>
-        <textarea id="notes" class="input" name="address" placeholder="" style="height:100px"></textarea>
+        <textarea id="address" class="input" name="address" placeholder="" style="height:100px" autocomplete="off" required></textarea>
+        <error-output class="address-error" for="text"></error-output>
     </div>
     <div style="display: flex;">
         <div class="row-content" >  <label class="label text" for="city">City</label> 
@@ -54,11 +60,14 @@
             <input class="input" id="zip code" type="number" name="Zip Code"></input>
         </div>
     </div> 
-    <div style= "margin-top: 20px; margin-left: 200px;">
+    <div style= "margin-top: 20px; margin-left: 250px;">
         <button type="add" class="button addButton" id="submitButton">Add</button>
         <button type="reset" class="resetButton button">Reset</button>
     </div> 
     </div>
-    </div>
+    <!-- </div> -->
+   </form>
+   </div>
+   <script defer src="../js/addressBook_form.js"></script>
     </body>
     </html>
