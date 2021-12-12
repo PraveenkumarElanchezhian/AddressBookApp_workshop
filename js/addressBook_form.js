@@ -117,7 +117,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
          else {
           addressBookList = [addressBookDataObject];
         }
-        
+        localStorage.setItem("AddressBookList", JSON.stringify(addressBookList));
       };
 
       const createNewAddressBookIdId = () => {
