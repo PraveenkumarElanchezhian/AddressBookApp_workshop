@@ -175,5 +175,12 @@ window.addEventListener('DOMContentLoaded', (event) => {
         });
       };
       
-      
+      const resetForm = () => {
+        setValue('#name', '');
+        setValue('#phonenumber', '');
+        setValue('#address', '');
+        setValue('#ZipCode', '');
+        unsetSelectedValues('[name=State]');
+        unsetSelectedValues('[name=City]');
+      };
       
