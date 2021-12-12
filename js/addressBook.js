@@ -12,7 +12,6 @@ class AddressBookData{
         else
             throw 'Given firstname is Incorrect';
     }
-
     get phonenumber(){
         return this._phonenumber;
     }
@@ -23,7 +22,6 @@ class AddressBookData{
         else
             throw 'Given phonenumber is Incorrect';
     }
-
     get address(){
         return this._address;
     }
@@ -34,28 +32,24 @@ class AddressBookData{
         else
             throw 'Given address is incorrect';
     }
-
     get state() {
         return this._state;
     }
     set state(state) {
         this._state = state;
     }
-
     get city() {
         return this._city;
     }
     set city(city) {
         this._city = city;
     }
-
     get zipcode() {
         return this._zipcode;
     }
     set zipcode(zipcode) {
         this._zipcode = zipcode;
     }
-
     tostring(){
         return "Id = " + this.id + " fullName = " + this.firstname + " phonenumber = " +this.phonenumber + " address = "+ this.address + " city = "+this.city+ " state = "+this.state+" ZipCode = "+this.zipcode;
     }
