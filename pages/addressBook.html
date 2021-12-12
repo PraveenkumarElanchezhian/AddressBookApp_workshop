@@ -17,7 +17,7 @@
            </div>
         </header>
         <div class="form-content">
-            <form class="form" action="#" onreset="event.preventDefault();">
+            <form class="form" action="#" onreset="event.preventDefault(); resetForm()" onsubmit="save(event)">
 
         <!-- <div style="width:700px;margin-left:300px;height:500px;display:block !important; background-color:white;"> -->
            <div class="form-head">PERSON ADDRESS FORM</div>
@@ -40,8 +40,8 @@
         <error-output class="address-error" for="text"></error-output>
     </div>
     <div style="display: flex;">
-        <div class="row-content" >  <label class="label text" for="city">City</label> 
-            <select class="input" id="city" name="City">
+        <div class="row-content" >  <label class="label text" for="City">City</label> 
+            <select class="input" id="City" name="City">
                 <option value="0">Select City</option>
                 <option value="1">Salem</option>
                 <option value="2">Rasipuram</option>
@@ -57,7 +57,7 @@
          </select>
        </div>
         <div class="row-content" > <label class="label text" for="zip code">Zip Code</label>
-            <input class="input" id="zip code" type="number" name="ZipCode"></input>
+            <input class="input" id="ZipCode" type="number" name="ZipCode"></input>
         </div>
     </div> 
     <div style= "margin-top: 20px; margin-left: 250px;">
@@ -69,5 +69,6 @@
    </form>
    </div>
    <script defer src="../js/addressBook_form.js"></script>
+   <script defer src="../js/site_properties.js"></script>
     </body>
     </html>
